@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
   package="com.example.estudobranch">
 
+  <uses-permission android:name="android.permission.INTERNET" />
+
   <application
     android:allowBackup="true"
     android:icon="@mipmap/ic_launcher"
@@ -9,13 +11,29 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/AppTheme">
+
     <activity android:name=".MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
+
+      <!-- Branch URI Scheme -->
+      <intent-filter>
+        <data android:scheme="estudobranch" />
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+      </intent-filter>
+
     </activity>
+    <!-- Branch init -->
+    <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_kmPTZLeJOYncTPo5fQh7ldlbxAg4id5d" />
+    <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_lkJLZIhVP6ehVRb9cGo9hooarBi1od5E" />
+    <meta-data android:name="io.branch.sdk.TestMode" android:value="false" />     <!-- Set to true to use Branch_Test_Key (useful when simulating installs and/or switching between debug and production flavors) -->
+
+
   </application>
 
 </manifest>

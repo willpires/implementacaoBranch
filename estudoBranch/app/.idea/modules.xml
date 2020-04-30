@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" group="estudoBranch/app" />
+      <module fileurl="file://$PROJECT_DIR$/../estudoBranch.iml" filepath="$PROJECT_DIR$/../estudoBranch.iml" group="estudoBranch" />
+    </modules>
+  </component>
+</project>

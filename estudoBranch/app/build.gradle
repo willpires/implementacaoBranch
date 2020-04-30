@@ -31,4 +31,11 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.google.firebase:firebase-appindexing:19.0.0'
+    implementation 'com.google.android.gms:play-services-ads-identifier:16+'
+
+//    Branch.io
+    implementation 'io.branch.sdk.android:library:5.+'
+    // Chrome Tab matching (enables 100% guaranteed matching based on cookies)
+    implementation 'androidx.browser:browser:1.0.0'
 }
